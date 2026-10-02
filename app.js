@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080";
+const API_URL = "https://tkjasmyn-understand-it.fly.dev";
 
 const state = {
   screen: "home",

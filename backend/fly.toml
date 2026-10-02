@@ -1,0 +1,27 @@
+# fly.toml app configuration file generated for tkjasmyn-understand-it on 2026-10-02T10:34:52+01:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'tkjasmyn-understand-it'
+primary_region = 'lhr'
+
+[build]
+  [build.args]
+    GO_VERSION = '1.26.1'
+
+[env]
+  PORT = '8080'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ['app']
+
+[[vm]]
+  memory = '256mb'
+  cpus = 1
+  memory_mb = 256
