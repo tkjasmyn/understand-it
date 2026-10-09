@@ -1,4 +1,4 @@
-const API_URL = "https://tkjasmyn-understand-it.fly.dev";
+const API_URL = "https://understand-it.onrender.com";
 
 const state = {
   screen: "home",
